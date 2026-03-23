@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über mich | Rishi Aaradhakananda</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">Rishi Aaradhakananda</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="ueber-mich.html" class="active">Über mich</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="kontakt.html" class="btn-book">Jetzt buchen</a>
+        <a href="https://www.instagram.com/rishiaaradhakananda/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.5"/>
+          </svg>
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="about-page">
+    <div class="container">
+      <h1>Bio</h1>
+      <div class="about-image">
+        <img src="images/guru-blessings.jpg" alt="Rishi Aaradhakananda">
+      </div>
+      <p>Rishi Aaradhakananda is responsible for coordinating devotional music in the global mission of Bhakti Marga. He grew up in a spiritual environment, practicing sadhana of ancient Indian traditions from an early age. In the year 2011, he encountered his spiritual master, Paramahamsa Vishwananda, and became a Vaishnava monk. Rishi resides in the main ashram of Bhakti Marga, Shree Peetha Nilaya, in Germany, and travels the world accompanying Guruji, primarily serving in the practice of devotional chants, kirtans, and bhajans. With a professional background in music and a jazz diploma from the Saarland University of Music, his expertise has played a crucial role in guiding Bhakti Marga to reach millions worldwide, especially through the acclaimed "Kirtan Sessions" video series, widely recognised and watched across the globe.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Imprint</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/rishiaaradhakananda/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
